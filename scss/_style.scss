@@ -1,0 +1,72 @@
+.section-bg{
+    padding-top: $size03;
+    .container{
+            @extend %container-size;
+            background-color: $color01;
+        .wrapper{
+            @include d-flex(flex,space-between);
+            @media (max-width:$br01){
+                @include center(flex, center, center,column);
+            }
+            .block{
+                @include center(flex, center, center,column);
+                @media (max-width:$br01){
+                    margin-top:$size02;
+                }
+                background-color: $color02;
+                @include max-width($size01, 100%);
+                height: $size01;
+                h2{
+                    text-align: center;
+                    font-size:$size03;
+                    &::after{
+                        content: '';
+                        width: $size01;
+                        height:$size04;
+                        background-color: $color03;
+                        display: block;
+                        margin: 10px 0;
+                    }
+                }
+                p{ 
+                    font-size:$size02; 
+                    width: $size01;
+                    text-align: center;
+                    @include transition(all, 1s, linear, 1s);
+                    &:hover{
+                        color: $color02;
+                    }
+                }
+            }
+        }
+    }
+}
+.section-news{
+    padding-top: $size03;
+    .news-container{
+        @extend %container-size;
+        background-color: $color01;
+        .news-wraper{
+            @media (max-width:$br02){
+                flex-wrap: wrap;
+            }
+            @include d-flex(flex,space-between);
+            .news-block{
+                width: $size05;
+                height: $size05;
+                &:nth-child(1){
+                    background-color: $color03;
+                }
+                &:nth-child(2){
+                    background-color: $color02;
+                }
+                &:nth-child(3){
+                    background-color: $color03;
+                    @media (max-width:$br02){
+                        margin-top: $size02;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,181 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.section-bg .container, .section-news .news-container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-bg {
+  padding-top: 20px;
+}
+
+.section-bg .container {
+  background-color: #FFF;
+}
+
+.section-bg .container .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .section-bg .container .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.section-bg .container .wrapper .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: lightblue;
+  max-width: 300px;
+  width: 100%;
+  height: 300px;
+}
+
+@media (max-width: 600px) {
+  .section-bg .container .wrapper .block {
+    margin-top: 12px;
+  }
+}
+
+.section-bg .container .wrapper .block h2 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.section-bg .container .wrapper .block h2::after {
+  content: '';
+  width: 300px;
+  height: 1px;
+  background-color: black;
+  display: block;
+  margin: 10px 0;
+}
+
+.section-bg .container .wrapper .block p {
+  font-size: 12px;
+  width: 300px;
+  text-align: center;
+  -webkit-transition: all 1s linear 1s;
+  transition: all 1s linear 1s;
+}
+
+.section-bg .container .wrapper .block p:hover {
+  color: lightblue;
+}
+
+.section-news {
+  padding-top: 20px;
+}
+
+.section-news .news-container {
+  background-color: #FFF;
+}
+
+.section-news .news-container .news-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 470px) {
+  .section-news .news-container .news-wraper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.section-news .news-container .news-wraper .news-block {
+  width: 150px;
+  height: 150px;
+}
+
+.section-news .news-container .news-wraper .news-block:nth-child(1) {
+  background-color: black;
+}
+
+.section-news .news-container .news-wraper .news-block:nth-child(2) {
+  background-color: lightblue;
+}
+
+.section-news .news-container .news-wraper .news-block:nth-child(3) {
+  background-color: black;
+}
+
+@media (max-width: 470px) {
+  .section-news .news-container .news-wraper .news-block:nth-child(3) {
+    margin-top: 12px;
+  }
+}
+/*# sourceMappingURL=global.css.map */
